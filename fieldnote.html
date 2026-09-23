@@ -6,39 +6,168 @@
 <title>FIELDNOTE — Operator Handoff Pack</title>
 <meta name="description" content="FIELDNOTE Operator Handoff Pack for freelancers: intake, scope, kickoff, delivery. Use in 48 hours. $39 Core / $79 Pro. Note FIELD39/FIELD79."/>
 <style>
- body{font-family:ui-sans-serif,system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.5;color:#111}
- .price{font-size:1.4rem;font-weight:700}
- .btn{display:inline-block;background:#111;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;margin:6px 8px 6px 0}
- .muted{color:#666;font-size:.9rem}
- card{display:block;border:1px solid #ddd;border-radius:12px;padding:16px;margin:16px 0}
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --ink: #e8eaef;
+    --muted: #9aa3b2;
+    --line: #2a3140;
+    --accent: #c8f542;
+    --accent-ink: #12140a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 48px 20px 80px; }
+  .brand {
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; margin: 12px 0 16px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; }
+  h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  p.lead { font-size: 1.1rem; color: #d0d5de; }
+  .muted { color: var(--muted); font-size: 0.92rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    margin: 18px 0;
+  }
+  .prices { display: grid; gap: 12px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .prices { grid-template-columns: 1fr 1fr; } }
+  .amount { font-size: 1.75rem; font-weight: 800; margin: 8px 0; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .btn.secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  ul.check { padding-left: 1.1rem; }
+  ul.check li { margin: 0.35rem 0; }
+  .note {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: #0b0d11;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 2px 6px;
+    font-size: 0.85rem;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 0.75rem;
+    color: #6b7382;
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 6px 6px 0;
+  }
+  a.back { color: var(--muted); }
 </style>
 </head>
 <body>
- <h1>FIELDNOTE</h1>
- <p>Operator tools for freelancers and small studios who lose money to messy handoffs.</p>
- <h2>Operator Handoff Pack</h2>
- <p>Intake, scope one-pager, kickoff checklist, delivery checklist, revision policy, invoice note. Install in one afternoon.</p>
- <p class="price">$39 Core · $79 Pro (adds email scripts)</p>
- <p>
-  <a class="btn" href="https://cash.app/$rooutt/39">Pay $39 — Core</a>
-  <a class="btn" href="https://cash.app/$rooutt/79">Pay $79 — Pro</a>
- </p>
- <p class="muted">Payment notes: <code>FIELD39</code> or <code>FIELD79</code>. Delivery by file link after payment clears (usually ≤15 minutes during staffed hours).</p>
- <h3>What's inside</h3>
- <ul>
-  <li>Client intake sheet</li>
-  <li>Scope one-pager</li>
-  <li>Kickoff + delivery checklists</li>
-  <li>Revision / change-order policy</li>
-  <li>Invoice note template</li>
-  <li>Pro: ready email scripts</li>
- </ul>
- <p class="muted">No fake scarcity. Digital goods. Operated by Qode LLC (legal operator only — FIELDNOTE is the product brand).</p>
+  <div class="wrap">
+    <div class="brand">FIELDNOTE</div>
+    <h1>Stop bleeding hours on messy client handoffs.</h1>
+    <p class="lead">
+      The <strong>Operator Handoff Pack</strong> is a complete kit for solo operators and freelancers:
+      intake, scope one-pager, kickoff checklist, delivery checklist, revision policy, and invoice note —
+      so you can run a clean engagement in <strong>48 hours</strong>, not reinvent the process every time.
+    </p>
 
- <h2>Also from FIELDNOTE</h2>
- <h3>Scope Lock Kit — $97</h3>
- <p>Scope calculator, boundary scripts, change-order form, bad-fit kill list.</p>
- <p><a class="btn" href="https://cash.app/$rooutt/97">Pay $97 — note FIELDSCOPE97</a></p>
+    <div>
+      <span class="pill">Digital download</span>
+      <span class="pill">Markdown (+ PDF if in zip)</span>
+      <span class="pill">No fake scarcity</span>
+      <span class="pill">No testimonials invented</span>
+    </div>
 
+    <h2>Who it’s for</h2>
+    <ul class="check">
+      <li>Freelancers tired of Slack archaeology and “quick tweaks” that eat the margin</li>
+      <li>Solo operators who need a repeatable Day-0 → delivery loop</li>
+      <li>Small studios standardizing handoffs without buying a bloated “agency OS”</li>
+    </ul>
+
+    <h2>What’s inside</h2>
+    <div class="card">
+      <ul class="check">
+        <li><strong>Client intake</strong> — ask once, capture decision rights, assets, and risk flags</li>
+        <li><strong>Scope one-pager</strong> — one “approved” reply locks the job</li>
+        <li><strong>Kickoff checklist</strong> — money, assets, and go/no-go before you open tools</li>
+        <li><strong>Delivery checklist</strong> — ship clean with a clear defect window</li>
+        <li><strong>Revision / change-order policy</strong> — plain English edges</li>
+        <li><strong>Invoice note template</strong> — payment confirm + next step</li>
+        <li><strong>Pro:</strong> ready email scripts (scope lock, asset chase, change order, delivery, overdue…)</li>
+      </ul>
+    </div>
+
+    <h2 id="pricing">Pricing</h2>
+    <div class="prices">
+      <div class="card price-card">
+        <h3>Core</h3>
+        <div class="amount">$39</div>
+        <p class="muted">Full handoff kit (intake → invoice). Payment note <span class="note">FIELD39</span></p>
+        <a class="btn" href="https://cash.app/$rooutt/39" rel="noopener">Pay $39 — Core</a>
+      </div>
+      <div class="card price-card">
+        <h3>Pro</h3>
+        <div class="amount">$79</div>
+        <p class="muted">Core + operator email scripts. Payment note <span class="note">FIELD79</span></p>
+        <a class="btn" href="https://cash.app/$rooutt/79" rel="noopener">Pay $79 — Pro</a>
+      </div>
+    </div>
+
+    <p class="muted">
+      After payment clears, you get the markdown (+ PDF if included) zip — usually within
+      <strong>15 minutes</strong> during staffed hours. Include the note code so delivery isn’t delayed.
+    </p>
+
+    <h2>Also from FIELDNOTE</h2>
+    <div class="card">
+      <h3>Scope Lock Kit — $97</h3>
+      <p class="muted">Scope calculator, boundary scripts, change-order form, bad-fit kill list.</p>
+      <p class="muted">Payment note <span class="note">FIELDSCOPE97</span></p>
+      <a class="btn" href="https://cash.app/$rooutt/97" rel="noopener">Pay $97 — Scope Lock</a>
+    </div>
+
+    <h2>Honest limits</h2>
+    <p class="muted">
+      These are templates and operator scripts — not a guarantee of clients, revenue, or outcomes.
+      No cold-email lists. No fake social proof. Earn before you spend on ads.
+    </p>
+
+    <p class="muted"><a class="back" href="./">← Rooutt store</a></p>
+
+    <footer>
+      FIELDNOTE is the product brand. Digital goods sold by Qode LLC as legal operator only.
+      See TERMS with your download. All sales of delivered digital files are final except where required by law.
+    </footer>
+  </div>
 </body>
 </html>
